@@ -25,6 +25,15 @@ public class MainClass {
 		System.out.println();
 		System.out.println(randomAnimal.getName());
 		System.out.println(randomAnimal.favFood);
+		
+		System.out.println();
+		randomAnimal.walkAround();
+		
+		System.out.println(((Cats) randomAnimal).favToy);
+		
+		if(randomAnimal instanceof Cats){
+			System.out.println(randomAnimal.getName() + "is a Cat");
+		}
 	}
 	
 }
